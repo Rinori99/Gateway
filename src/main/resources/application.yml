@@ -32,3 +32,23 @@ zuul:
       path: /auth/**
       serviceId: authentication-service
       stripPrefix: true
+    course-service:
+      path: /course/**
+      serviceId: course-service
+      stripPrefix: true
+    school-service:
+      path: /school/**
+      serviceId: school-service
+      stripPrefix: true
+    notifications-service:
+      path: /notification/**
+      serviceId: notifications-service
+      stripPrefix: true
+    meetings-service:
+      path: /meeting/**
+      serviceId: meetings-service
+      stripPrefix: true
+    schedule-presence-service:
+      path: /schedule-presence/**
+      serviceId: schedule-presence-service
+      stripPrefix: true
