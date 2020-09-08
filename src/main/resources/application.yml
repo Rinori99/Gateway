@@ -19,6 +19,7 @@ zuul:
     connect-timeout-millis: 5000000
     socket-timeout-millis: 5000000
   ignored-service: '*'
+  sensitiveHeaders: Cookie,Set-Cookie
   routes:
     chat-service:
       path: /chat/**
@@ -51,4 +52,8 @@ zuul:
     schedule-presence-service:
       path: /schedule-presence/**
       serviceId: schedule-presence-service
+      stripPrefix: true
+    calendar-service:
+      path: /calendar/**
+      serviceId: calendar-service
       stripPrefix: true
